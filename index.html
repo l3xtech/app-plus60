@@ -4,6 +4,7 @@
         <link href="https://fonts.googleapis.com/css?family=K2D&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
     </head>
     <body lang="pt-br">
         <header>
@@ -22,10 +23,10 @@
                         <span class="s-span__form">Nome</span>
                         <input id="senior-name" name="senior-name" type="text">
                         <span class="s-span__form">Data de <br> Nascimento</span>
-                        <input id="senior-birth-date" name="senior-birth-date" type="date">
+                        <input id="senior-birth-date" name="senior-birth-date" type="text">
                         <span class="s-span__form">Endereço</span>
                         <input id="senior-home-address" name="senior-home-address" type="text"> 
-                        <input class="submit__button"  type="submit" value="AVANÇAR">
+                        <input class="submit__button" id="submit__button1" type="submit" value="AVANÇAR">
                     </form>
                 </div>
             </div>
@@ -51,7 +52,7 @@
                             <option value="AB-">AB-</option>
                             <option value="O-">O-</option>
                         </select>
-                        <input class="submit__button"  type="submit" value="AVANÇAR">
+                        <input class="submit__button" id="submit__button2" type="submit" value="AVANÇAR">
                     </form>
                 </div>
             </div>
@@ -70,32 +71,32 @@
                         <input id="responsible-phone2" name="responsible-phone2" type="tel">
                         <span class="r-span__form">Email</span>
                         <input id="responsible-email" name="responsible-email" type="email"> 
-                        <input class="submit__button"  type="submit" value="SALVAR">
+                        <input class="submit__button"  id="submit__button3" type="submit" value="SALVAR">
                     </form>
                 </div>
             </div>
         </section>
         <section class="button-help__section" >
             <div class="button-help__div">
-                <button class="button-help">AJUDA</button>
+                <button class="button-help" id="submit__buttonH">AJUDA</button>
             </div>
         </section>
         <section class="options-info__section">
             <div class="options-info__div">
                 <span class="help-span">ME AJUDA!</span>
-                <img class="opt-img" src="./src/image/contact.png">
+                <img class="opt-img" id="help-r" src="./src/image/contact.png">
                 <span class="opt-span">Responsável</span>
-                <img class="opt-img" src="./src/image/medic-info.png">
+                <img class="opt-img" id="help-p"  src="./src/image/medic-info.png">
                 <span class="opt-span">Pronturário</span>
-                <img class="opt-img" src="./src/image/senior.png">
-                <span class="opt-span">Sobre mim</span>
+                <img class="opt-img" id="help-s" src="./src/image/senior.png">
+                <span class="opt-span">Informações</span>
             </div>
             <div class="help-msg__div">
                 <span class="help-span">ME AJUDA!</span>
                 <div class="msg-box">
-                    <span class="msg">Mensagem</span>
+                    <span class="msg" id="msg"></span>
                 </div>
-                <img class="return-button" src="./src/image/return.png">
+                <img class="return-button" id="rr" src="./src/image/return.png">
             </div>
         </section>
     </body>

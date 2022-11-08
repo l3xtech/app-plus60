@@ -1,11 +1,11 @@
 .senior__personalData {
-    display: none;
+    /* display: none; */
 }
 .senior__medicalData {
-    display: none;
+    display: none; /* btn1 */
 }
 .responsible__personalData {
-    display: none;
+    display: none; /* btn2 */
 }
 .button-help__section {
     display: none;
@@ -143,10 +143,9 @@ select {
     transform: translateY(4px);
 }
 .options-info__section {
+    text-align: center;
     height: auto;
     padding-top: 20px;
-    padding-left: 6%;
-    padding-right: 6%;
 }
 .options-info__div {
     text-align: center;
@@ -177,13 +176,15 @@ select {
     width: 265px;
 }
 .msg-box {
+    padding-left: 14%;
+    text-align: left;
     padding-top: 35px;
     background-color: #ffffff;
-    border-radius: 25px;
     width: 100%;
     height: 400px;
     margin-top: 10px;
     margin-bottom: 30px;
+    z-index: 999;
 }
 .msg {
     font-family: Helvetica;
